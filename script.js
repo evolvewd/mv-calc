@@ -10,17 +10,17 @@ function generatePanelSelectors() {
   for (let i = 1; i <= panelCount; i++) {
     const panelSelector = document.createElement("div");
     panelSelector.innerHTML = `
-      <label for="tipo-${i}" class="block text-sm font-medium">Pannello ${i}:</label>
+      <label for="tipo-${i}" class="block text-sm font-medium text-white">Pannello ${i}:</label>
       <select id="tipo-${i}" class="w-full py-2 px-3 mb-4 border rounded bg-gray-900 text-white">
         <option value="elegance">Elegance</option>
         <option value="pro">Pro</option>
       </select>
-      <label for="taglia-${i}" class="block text-sm font-medium">Formato ${i}:</label>
+      <label for="taglia-${i}" class="block text-sm font-medium text-white">Formato ${i}:</label>
       <select id="taglia-${i}" class="w-full py-2 px-3 mb-4  border rounded bg-gray-900 text-white">
         <option value="A4">A4</option>
         <option value="A3">A3</option>
       </select>
-      <label for="orientamento-${i}" class="block text-sm font-medium">Orientamento del Pannello ${i}:</label>
+      <label for="orientamento-${i}" class="block text-sm font-medium text-white">Orientamento del Pannello ${i}:</label>
       <select id="orientamento-${i}" class="w-full py-2 px-3 mb-4 border rounded bg-gray-900 text-white">
         <option value="h">Orizzontale (h)</option>
         <option value="v">Verticale (v)</option>
