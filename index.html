@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcolatore Dimensione Pannello</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white p-4">
+    <div class="max-w-md mx-auto bg-gray-800 rounded-lg p-6">
+      <div class="flex flex-col items-center pb-4">
+        <img src="mv-logo.svg" alt="Logo" width="60" height="60" />
+        <h1 class="text-4xl font-light mb-4">Calculator</h1>
+      </div>
+      <div class="mb-4">
+        <label for="panel-count" class="block text-sm font-medium">Numero di Pannelli:</label>
+        <input type="number" id="panel-count" class="w-full py-2 px-3 border rounded bg-gray-900 text-white" value="1" />
+      </div>
+
+      <div class="mb-4">
+        <label for="panel-type" class="block text-sm font-medium">Tipo di Pannello:</label>
+        <select id="panel-type" class="w-full py-2 px-3 border rounded bg-gray-900 text-white">
+          <option value="elegance">Elegance</option>
+          <option value="pro">Pro</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label for="paper-size" class="block text-sm font-medium">Formato:</label>
+        <select id="paper-size" class="w-full py-2 px-3 border rounded bg-gray-900 text-white">
+          <option value="A4">A4</option>
+          <option value="A3">A3</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label for="panel-orientation" class="block text-sm font-medium">Orientamento del Pannello:</label>
+        <select id="panel-orientation" class="w-full py-2 px-3 border rounded bg-gray-900 text-white">
+          <option value="h">Orizzontale (h)</option>
+          <option value="v">Verticale (v)</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label for="glass-size" class="block text-sm font-medium">Misura del Vetro (mm):</label>
+        <input type="number" id="glass-size" class="w-full py-2 px-3 border rounded bg-gray-900 text-white" />
+      </div>
+
+      <button id="calculateSize" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Calcola Dimensione Totale</button>
+
+      <div id="meta" class="mt-4"></div>
+      <div id="ingombro" class="mt-4"></div>
+      <div id="gap" class="mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
