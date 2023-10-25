@@ -1,0 +1,49 @@
+<div class=" bg-cover min-h-screen w-full flex justify-center items-center" style="background-image:
+url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');"">
+<div class="w-full bg-black m-10 rounded-xl bg-opacity-40 backdrop-filter backdrop-blur-lg">
+  <div class="rounded-lg p-6">
+    <div class="flex flex-col items-center pb-4">
+      <img src="mv-logo.svg" alt="Logo" width="100" height="100" />
+      <h1 class="text-4xl font-light mb-4"></h1>
+    </div>
+    {{/*  <div class="mb-4">
+      <label for="panel-count" class="block text-6xl font-medium text-white">Numero di Colonne:</label>
+      <input type="number" id="panel-count" class="w-full py-8 px-8 border rounded bg-gray-900 text-white text-3xl" value="1" />
+    </div>  */}}
+
+    {{/*  <div id="panel-type-selectors"></div>  */}}
+
+    {{/*  <button id="generatePanelSelectors" class="bg-blue-900 text-white text-6xl py-2 mb-4 px-4 rounded hover:bg-blue-600">Genera Colonne</button>  */}}
+
+    {{/*  <div class="mb-4">
+      <label for="glass-size" class="block text-6xl font-medium text-white">Misura del Vetro (mm):</label>
+      <input type="number" id="glass-size" class="w-full py-2 px-3 border rounded bg-gray-900 text-white text-6xl" />
+    </div>  */}}
+
+    <button id="calculateSize" class="bg-blue-900 text-white text-6xl py-2 px-4 rounded hover:bg-blue-600">Calcola Dimensione Totale</button>
+
+    <div id="meta" class="mt-4 text-blue-200 text-6xl"></div>
+    <div id="ingombro" class="mt-4 text-blue-200 text-6xl"></div>
+    <div id="gap" class="mt-4 text-blue-200 text-6xl"></div>
+  </div>
+</div>
+</div>
+
+
+
+
+<label for="tipo-${i}" class="block text-sm font-medium text-white text-3xl">Pannello ${i}:</label>
+<select id="tipo-${i}" class="w-full py-2 px-3 mb-4 border rounded bg-gray-900 text-white text-3xl">
+  <option value="elegance">Elegance</option>
+  <option value="pro">Pro</option>
+</select>
+<label for="taglia-${i}" class="block text-sm font-medium text-white text-3xl">Formato ${i}:</label>
+<select id="taglia-${i}" class="w-full py-2 px-3 mb-4  border rounded bg-gray-900 text-white text-3xl">
+  <option value="A4">A4</option>
+  <option value="A3">A3</option>
+</select>
+<label for="orientamento-${i}" class="block text-sm font-medium text-white text-3xl">Orientamento del Pannello ${i}:</label>
+<select id="orientamento-${i}" class="w-full py-2 px-3 mb-4 border rounded bg-gray-900 text-white text-3xl">
+  <option value="h">Orizzontale (h)</option>
+  <option value="v">Verticale (v)</option>
+</select>
