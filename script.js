@@ -99,7 +99,7 @@ function calculateSize() {
 
   const decimale = 1;
   const totalGlassSize = (glassSize - totalPanelSize) / 10;
-  const gap = totalGlassSize / (panelCount + 1) / 10;
+  const gap = totalGlassSize / (panelCount + 1);
   const centroVetro = glassSize / 20;
   const gapArr = gap.toFixed(decimale);
   document.getElementById("meta").innerHTML = `Centro Vetrina: ${centroVetro} cm`;
