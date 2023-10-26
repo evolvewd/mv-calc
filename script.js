@@ -48,7 +48,7 @@ function calculateSize() {
   const orientamento = document.querySelectorAll('[id^="orientamento-"]');
   const glassSize = parseInt(document.getElementById("glass-size").value) * 10;
 
- const json = {
+  const json = {
     elegance: {
       A4: {
         h: {
@@ -86,18 +86,15 @@ function calculateSize() {
       },
     },
   };
+
   let totalPanelSize = 0;
 
   for (let i = 0; i < panelCount; i++) {
     const selectedPanelType = tipo[i].value;
-    console.log(selectedPanelType);
     const selectedPaperSize = taglia[i].value;
-    console.log(selectedPaperSize);
     const selectedPanelOrientation = orientamento[i].value;
-    console.log(selectedPanelOrientation);
 
     totalPanelSize += json[selectedPanelType][selectedPaperSize][selectedPanelOrientation].l;
-    console.log(totalPanelSize);
   }
 
   const decimale = 1;
@@ -105,7 +102,6 @@ function calculateSize() {
   const gap = totalGlassSize / (panelCount + 1) / 10;
   const centroVetro = glassSize / 20;
   const gapArr = gap.toFixed(decimale);
-
   document.getElementById("meta").innerHTML = `Centro Vetrina: ${centroVetro} cm`;
 
   if (totalGlassSize > 0) {
