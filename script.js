@@ -48,45 +48,44 @@ function calculateSize() {
   const orientamento = document.querySelectorAll('[id^="orientamento-"]');
   const glassSize = parseInt(document.getElementById("glass-size").value) * 10;
 
-  const json = {
+ const json = {
     elegance: {
       A4: {
         h: {
-          l: 369,
+          l: 368,
         },
         v: {
-          l: 21,
+          l: 282,
         },
       },
       A3: {
         h: {
-          l: 300,
+          l: 492,
         },
         v: {
-          l: 369,
+          l: 368,
         },
       },
     },
     pro: {
       A4: {
         h: {
-          l: 150,
+          l: 315,
         },
         v: {
-          l: 50,
+          l: 228,
         },
       },
       A3: {
         h: {
-          l: 250,
+          l: 0,
         },
         v: {
-          l: 150,
+          l: 315,
         },
       },
     },
   };
-
   let totalPanelSize = 0;
 
   for (let i = 0; i < panelCount; i++) {
